@@ -6,7 +6,25 @@ do{
 	switch(cmd){
 		case "add":{
 					var filmName = prompt("Please, enter film name")
+					 filmN = !!filmName
+						if  (filmN==false){
+							do{
+								if (filmN == true) break
+									filmN = !!prompt("rewrite")}
+							while(true)}
+						if(filmN == true){
+								console.log(filmN)
+					}
+			
 					var filmY = +prompt("Please, enter film year")
+						 if  (filmY<1895){
+							do{
+							if (filmY >=1895) break	 		
+								filmY = prompt("rewrite")}
+								while(true)}
+
+						if(filmY >=1895){
+						console.log(filmY)	}
 					const film = {
 						'name': filmName,
 						'year': filmY
