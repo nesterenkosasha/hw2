@@ -31,6 +31,12 @@ do{
 					}
 					filmDatabase.push(film); 
 		}break
+		case "review":{
+			var message = "";
+				for (let f=0; f<filmDatabase.length;++f){
+				message = message + "name: " + filmDatabase[f].name + ", year: " + filmDatabase[f].year + "\n";}
+				alert(message);}
+		break
 	}
 }while(true)
 
