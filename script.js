@@ -37,6 +37,12 @@ do{
 				message = message + "name: " + filmDatabase[f].name + ", year: " + filmDatabase[f].year + "\n";}
 				alert(message);}
 		break
+		case "help":{
+			alert("Comand 'add' can add new films in film database. \nReview - gives you opportunity to review films. \nAmount shows you amount of films.")
+		}break
+		case "amount":{
+			alert("Amount: " + filmDatabase.length)
+		}break
 	}
 }while(true)
 
